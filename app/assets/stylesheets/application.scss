@@ -1,1 +1,79 @@
 @import "bootstrap/scss/bootstrap";
+@import "config/fonts";
+
+@font-face {
+  font-family: Moncr;
+  src: url(font-path('Moncr.otf'));
+}
+
+.main-banner {
+  display: flex;
+  margin: 0px, 0px, 0px, 0px;
+}
+
+.main-logo{
+  height: 250px;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 150px;
+
+}
+
+.black-background {
+  height: 800px;
+  margin-right: 0px;
+}
+
+
+p {
+  font-family: 'Roboto Mono', 'Sans Serif';
+}
+
+h4 {
+  font-family: 'Moncr', 'Sans Serif';
+}
+
+.btn-purple {
+  color: black;
+  padding: 8px 24px;
+  border-radius: 50px;
+  background: #CB9EF8;
+  transition: background 0.3s ease;
+  font-family: 'Roboto Mono', 'Sans Serif';
+}
+
+.btn-purple:hover {
+  background: #CB9EF8;
+  color: black;
+  opacity: 1;
+  font-family: 'Roboto Mono', 'Sans Serif';
+}
+
+.btn-green {
+  color: black;
+  padding: 8px 24px;
+  border-radius: 50px;
+  background: #E1FF2D;
+  transition: background 0.3s ease;
+  font-family: 'Roboto Mono', 'Sans Serif';
+}
+
+.btn-green:hover {
+  background: #E1FF2D;
+  color: black;
+  opacity: 1;
+  font-family: 'Roboto Mono', 'Sans Serif';
+}
+
+.flexbox1 {
+  margin-top: 350px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.text-about {
+  margin-left: 150px;
+  text-align: center;
+}

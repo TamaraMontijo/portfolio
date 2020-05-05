@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Portfolio</title>
+    <title>Tamara Montijo | Portfolio</title>
+    <meta name="description" content="Full Stack developer & Marketing Strategist. Find out my latest projects and feel free to get in touch">
+    <meta charset="utf-8">
+
+    <meta property="og:title" content="Tamara Montijo | Full Stack Developer portfolio">
+    <meta property="og:image" content="facebook-card.jpg">
+    <meta property="og:description" content="Full Stack developer & Marketing Strategist. Find out my latest projects and feel free to get in touch">
+    <meta property="og:site_name" content="Tamara Montijo"/>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    <%= action_cable_meta_tag %>
+    <%= favicon_link_tag '/assets/T.png' %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
   </head>
 
   <body>
+    <%#= render 'shared/navbar' %>
     <%= yield %>
   </body>
 </html>
