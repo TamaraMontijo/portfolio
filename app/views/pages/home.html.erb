@@ -1,2 +1,36 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="main-banner">
+      <div class="main-logo">
+        <img class="main-logo"
+          img src="/assets/logo_english.png"
+          alt="Tamara Montijo logo">
+    </div>
+    <div class="black-background">
+        <img class="black-background"
+        img src="/assets/black-background.png"
+        alt="Tamara Montijo logo">
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div class="container">
+  <div class="flexbox1">
+
+    <div class="profile-img">
+      <img class="profile rounded" style="height: 250px"
+      img src="/assets/perfil-lewagon.png"
+      alt="Tamara Montijo profile picture">
+    </div>
+
+    <div class="text-about">
+      <h4>HELLO!</h4>
+      <p> My name is Tamara and this is my website. It is great to have you here!
+      Having worked for <b>Microsoft</b> and <b>Google</b> and gaining experience in <b>Digital Marketing</b>,
+      I participated in Le Wagon's coding bootcamp (2020) in Lisbon with the aim of <b>changing careers</b> to become a <b>developer</b> and help building impactful applications. </p>
+      <br>
+      <br>
+      <br>
+      <%= link_to "LinkedIn", "#", class: "btn btn-purple" %>
+      <%= link_to "Projects", "#", class: "btn btn-green" %>
+    </div>
+  </div>
+</div>
