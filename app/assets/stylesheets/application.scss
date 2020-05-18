@@ -1,5 +1,10 @@
 @import "bootstrap/scss/bootstrap";
 @import "config/fonts";
+@import "components/card-project";
+@import "components/card-company";
+@import "components/navbar";
+@import "components/footer";
+// @import '@fortawesome/fontawesome-free';
 
 @font-face {
   font-family: Moncr;
@@ -20,7 +25,7 @@
 }
 
 .black-background {
-  height: 800px;
+  height: 850px;
   margin-right: 0px;
 }
 
@@ -29,8 +34,9 @@ p {
   font-family: 'Roboto Mono', 'Sans Serif';
 }
 
-h4 {
+h1 {
   font-family: 'Moncr', 'Sans Serif';
+  font-size: 45px;
 }
 
 .btn-purple {
@@ -69,7 +75,7 @@ h4 {
   margin-top: 350px;
   margin-left: 150px;
   margin-right: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
   display: flex;
 }
 
@@ -77,3 +83,9 @@ h4 {
   margin-left: 150px;
   text-align: center;
 }
+
+// .box {
+//   margin-left: 150px;
+//   margin-right: 300px
+// }
+

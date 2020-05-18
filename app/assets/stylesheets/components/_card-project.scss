@@ -1,0 +1,30 @@
+.card-project{
+  background-size: cover;
+  background-position: center;
+  // height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  background-size: 500px;
+  text-align: center;
+  font-style: bolder;
+  background-color: #999999;
+  opacity: 0.6;
+  height: 300px;
+  margin-bottom: 50px;
+  width: 250px;
+  margin-right: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
