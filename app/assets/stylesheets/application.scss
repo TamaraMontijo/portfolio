@@ -4,7 +4,8 @@
 @import "components/card-company";
 @import "components/navbar";
 @import "components/footer";
-// @import '@fortawesome/fontawesome-free';
+@import "font-awesome";
+@import "components/card-recommendation";
 
 @font-face {
   font-family: Moncr;
@@ -34,9 +35,14 @@ p {
   font-family: 'Roboto Mono', 'Sans Serif';
 }
 
-h1 {
+h2 {
   font-family: 'Moncr', 'Sans Serif';
   font-size: 45px;
+}
+
+h1 {
+  font-family: 'Moncr', 'Sans Serif';
+  font-size: 60px;
 }
 
 .btn-purple {

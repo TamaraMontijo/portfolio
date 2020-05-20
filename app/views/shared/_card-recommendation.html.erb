@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="card-recommendation">
+    <div id="carouselControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <% @recommendations.each_slice(1).with_index do |slice, index| %>
+          <div class="carousel-item <%= index.zero? ? "active" : "" %>">
+
+              <% slice.each.with_index do |rec, idx| %>
+                <div class="card_classes(idx)">
+                      <%= link_to recommendations_path(rec) do %>
+
+                          <h5 class="card-title"><%= rec.connection %></h5>
+                          <p class="card-text-company"><%= rec.company %></p>
+                          <br>
+                          <img class="linkedin-logo"
+                          src="/assets/linkedin.png"
+                          alt="LinkedIn logo">
+                          <p class="card-text"><%= rec.text %></p>
+
+                      <% end %>
+                </div>
+              <% end %>
+
+          </div>
+        <% end %>
+
+    </div>
+      <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+
