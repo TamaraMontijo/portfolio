@@ -1,0 +1,17 @@
+<!-- <div class="card-projects" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<#%= cl_image_path @project.cover.key, height: 300, width: 400, crop: :fill %>')">
+  <h1 class="card-title"><#%= project.name %></h1>
+</div> -->
+
+<% @projects.each do |project| %>
+    <%= link_to project_path(project) do %>
+    <div class="card-project"
+         <% if project.photos.attached? %>
+         <%else%>
+         style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4))">
+         <% end %>
+      <div class="d-flex justify-content-sm-center flex-column ">
+        <h3><%= project.name %></h3>
+      </div>
+    </div>
+    <% end %>
+<% end %>

@@ -14,3 +14,29 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+// const navItem = document.querySelectorAll('nav-item')
+//     navItem.forEach(navItem => {
+//       navItem.addEventListener("click", function(e) {
+//         e.preventDefault;
+//         var id = $(this).attr('href'),
+//             targetOffset = $(id).offset().top,
+//             menuHeight = $('nav').innerHeight();
+
+
+//             $('html, body').animate({
+//             scrolTop: targetOffset - menuHeight
+//             }, 500);
+//       })
+//     })
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-70px";
+  }
+}
+

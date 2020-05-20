@@ -12,25 +12,83 @@
 </div>
 
 <!-- ABOUT -->
-<div class="container">
+<div class="container" id="about">
   <div class="flexbox1">
 
     <div class="profile-img">
+      <br>
+      <br>
       <img class="profile rounded" style="height: 250px"
       img src="/assets/perfil-lewagon.png"
       alt="Tamara Montijo profile picture">
     </div>
 
     <div class="text-about">
-      <h4>HELLO!</h4>
+      <h2>HELLO!</h2>
+      <br>
       <p> My name is Tamara and this is my website. It is great to have you here!
       Having worked for <b>Microsoft</b> and <b>Google</b> and gaining experience in <b>Digital Marketing</b>,
-      I participated in Le Wagon's coding bootcamp (2020) in Lisbon with the aim of <b>changing careers</b> to become a <b>developer</b> and help building impactful applications. </p>
+      I participated in Le Wagon's coding bootcamp (2020) in Lisbon with the aim of <b>changing careers</b> to become a <b>developer</b> and help to build impactful applications. </p>
       <br>
       <br>
       <br>
-      <%= link_to "LinkedIn", "#", class: "btn btn-purple" %>
-      <%= link_to "Projects", "#", class: "btn btn-green" %>
+      <%= link_to "LinkedIn", href="https://www.linkedin.com/in/tamaramontijo/", target: '_blank' , class: "btn btn-purple" %>
+      <%= link_to "Projects", "#projects", class: "btn btn-green" %>
     </div>
   </div>
 </div>
+
+<!-- PROJECTS -->
+<div class="container" id="projects">
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>Projects</h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="cards">
+      <%= render 'shared/card-project' %>
+  </div>
+    <br>
+  <br>
+  <br>
+  <br>
+</div>
+
+<!-- COMPANIES -->
+<!-- <div class="container" id="companies">
+  <h1>Companies I worked for</h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="cards-company">
+      <#%= render 'shared/card-company' %>
+  </div>
+    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</div> -->
+
+<!-- RECOMMENDATIONS -->
+<div class="container" id="recommendations">
+  <h1>Recommendations</h1>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="cards-recommendation">
+      <%= render 'shared/card-recommendation' %>
+  </div>
+    <br>
+  <br>
+  <br>
+  <br>
+</div>
+

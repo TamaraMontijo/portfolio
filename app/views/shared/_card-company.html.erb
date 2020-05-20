@@ -1,0 +1,13 @@
+<% @companies.each do |company| %>
+  <%= link_to companies_path(company) do %>
+    <div class="card-company">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
+        <div class="card-company-infos">
+          <h2><%= company.name %></h2>
+          <p><%= company.city %>, <%= company.country %></p>
+          <p><%= company.position %></p>
+          <p><%= company.date %></p>
+        </div>
+    </div>
+  <% end %>
+<% end %>
